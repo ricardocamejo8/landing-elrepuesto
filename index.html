@@ -38,15 +38,16 @@
         /* --- HERO SECTION --- */
         .hero { text-align: center; padding: 60px 20px 80px; background-color: var(--bg-main); }
         
-        /* MAGIA CSS: Filtro para volver el logo blanco */
+        /* SOLUCIÓN LOGO: Usamos el archivo azul pero lo pintamos de blanco con filtros */
         .brand-focus-logo {
             width: 100%;
-            max-width: 450px; 
+            max-width: 500px; 
             height: auto;
             display: block; 
             margin: 0 auto 30px auto;
-            /* Esto convierte cualquier color del logo a BLANCO PURO */
+            /* Estos filtros fuerzan que la imagen sea blanca pura */
             filter: brightness(0) invert(1); 
+            -webkit-filter: brightness(0) invert(1);
         }
         
         .hero h1 { font-size: 2.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
@@ -96,8 +97,8 @@
         }
         .sticky-whatsapp:hover { background-color: #1da851; }
         
-        /* Icono SVG incrustado directamente (No se rompe) */
-        .wa-svg-inline { width: 24px; height: 24px; margin-right: 10px; fill: white; }
+        /* Icono OFICIAL de WhatsApp (relleno) para que se vea nítido */
+        .wa-svg-inline { width: 28px; height: 28px; margin-right: 10px; fill: white; }
         
         .sticky-whatsapp span { color: white; font-weight: 800; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;}
 
@@ -124,7 +125,7 @@
 
     <main class="hero">
         <div class="container">
-            <img src="logo-maruti.png" alt="Maruti Suzuki Genuine Parts" class="brand-focus-logo">
+            <img src="logo-maruti-blue.png" alt="Maruti Suzuki Genuine Parts" class="brand-focus-logo">
             
             <h1>Tu nuevo destino para repuestos <span class="text-accent">Suzuki y Maruti</span></h1>
             <p>Estamos construyendo una nueva experiencia de compra online. Mientras tanto, nuestro equipo de expertos está listo para atender tus cotizaciones y pedidos directamente.</p>
