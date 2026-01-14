@@ -33,44 +33,20 @@
         header { background-color: var(--bg-main); padding: 20px; text-align: center; border-bottom: 1px solid #222; }
         .main-header-logo { max-width: 250px; height: auto; display: block; margin: 0 auto; }
 
-        /* --- HERO SECTION CON LOGO SVG --- */
+        /* --- HERO SECTION --- */
         .hero { text-align: center; padding: 60px 20px 80px; background-color: var(--bg-main); }
         
-        /* Contenedor del nuevo logo hecho con código */
-        .brand-logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            gap: 15px; /* Espacio entre la S y el texto */
+        /* ESTILO DEL LOGO AZUL (Sin filtros extraños) */
+        .brand-focus-logo {
+            width: 100%;
+            max-width: 450px; 
+            height: auto;
+            display: block; 
+            margin: 0 auto 30px auto;
+            border-radius: 20px; /* Bordes redondeados */
+            /* Se eliminó el filtro para que se vea el color azul original */
         }
         
-        /* La "S" de Suzuki */
-        .suzuki-icon {
-            width: 60px;
-            height: 60px;
-            fill: white; /* Color blanco puro */
-        }
-        
-        /* El texto "MARUTI SUZUKI" */
-        .brand-text {
-            font-size: 36px;
-            font-weight: 900; /* Letra muy gruesa */
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            line-height: 1;
-            text-align: left;
-        }
-        .brand-text span {
-            display: block;
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 3px;
-            margin-top: 5px;
-            color: var(--accent-silver);
-        }
-
         .hero h1 { font-size: 2.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
         .text-accent { color: var(--accent-silver); }
         .hero p { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
@@ -109,7 +85,7 @@
         }
         .sticky-whatsapp:hover { background-color: #1da851; }
         
-        /* Icono SVG de WhatsApp limpio y simple */
+        /* Icono SVG de WhatsApp (Manteniendo el que te funcionó) */
         .wa-svg-inline { width: 24px; height: 24px; margin-right: 10px; fill: white !important; }
         
         .sticky-whatsapp span { color: white; font-weight: 800; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;}
@@ -117,9 +93,8 @@
         @media (min-width: 769px) {
             .location-info { flex: 1 1 400px; padding-right: 40px; text-align: left; margin-bottom: 0; }
             .contact-item { justify-content: flex-start; }
-            .brand-logo-container { gap: 20px; }
-            .suzuki-icon { width: 80px; height: 80px; }
-            .brand-text { font-size: 48px; }
+            .hero h1 { font-size: 2.8rem; }
+            .map-wrapper { flex: 1 1 500px; }
         }
         @media (max-width: 768px) {
             .btn { width: 100%; display: block; margin: 10px 0; }
@@ -137,22 +112,14 @@
     <main class="hero">
         <div class="container">
             
-            <div class="brand-logo-container">
-                <svg class="suzuki-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.067 13.93H10.156L1.933 24h11.91l8.223-10.07zM13.844 10.07h11.911L13.844 0H1.933l8.223 10.07h3.688z"/>
-                </svg>
-                <div class="brand-text">
-                    MARUTI SUZUKI
-                    <span>GENUINE PARTS</span>
-                </div>
-            </div>
+            <img src="logo-maruti-blue.png" alt="Maruti Suzuki Genuine Parts" class="brand-focus-logo">
             
-            <h1>Tu nuevo destino para repuestos <span class="text-accent">Suzuki y Maruti</span></h1>
+            <h1>Tu destino para repuestos <span class="text-accent">Suzuki</span></h1>
             <p>Estamos construyendo una nueva experiencia de compra online. Mientras tanto, nuestro equipo de expertos está listo para atender tus cotizaciones y pedidos directamente.</p>
             
             <div>
-                <a href="https://wa.me/56938524705?text=Hola,%20vengo%20de%20elrepuesto.cl%20y%20necesito%20cotizar..." class="btn btn-main" target="_blank">Cotizar por WhatsApp</a>
-                <a href="tel:+56938524705" class="btn btn-outline">Llamar por Teléfono</a>
+                <a href="https://api.whatsapp.com/send?phone=56936524705&text=Hola,%20quisiera%20consultar%20sobre..." class="btn btn-main" target="_blank">Comprar por WhatsApp</a>
+                <a href="tel:+56936524705" class="btn btn-outline">Llamar por Teléfono</a>
             </div>
         </div>
     </main>
@@ -200,9 +167,9 @@
             </div>
             <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 1.23 0 2.44.2 3.57.57.35.12.74.03 1.02-.24l2.2-2.2z"/></svg>
-                <p><a href="tel:+56938524705" style="color: inherit;">+56 9 3852 4705</a></p>
+                <p><a href="tel:+56938524705" style="color: inherit;">+56 9 3652 4705</a></p>
             </div>
-             <a href="https://wa.me/56938524705" class="btn btn-main" style="margin-top: 20px; text-align: center;">Contactar un ejecutivo</a>
+             <a href="https://api.whatsapp.com/send?phone=56936524705&text=Hola,%20quisiera%20consultar%20sobre..." class="btn btn-main" style="margin-top: 20px; text-align: center;">Contactar un ejecutivo</a>
         </div>
 
         <div class="map-wrapper">
@@ -211,7 +178,7 @@
     </section>
 
     <footer>
-        <p>© 2024 El Repuesto. Todos los derechos reservados.</p>
+        <p>© 2026 El Repuesto. Todos los derechos reservados.</p>
     </footer>
 
     <a href="https://wa.me/56938524705?text=Hola,%20necesito%20ayuda%20con%20un%20repuesto..." class="sticky-whatsapp" target="_blank">
